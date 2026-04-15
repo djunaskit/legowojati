@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - UD Legowo Jati</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif;}
+    body {background:#0d0d0d; color:#fff;}
+
+    header {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 60px;
+      background:#c19a6b;
+    }
+
+    .logo {display:flex; align-items:center; gap:10px;}
+    .logo img {height:45px;}
+    .logo span {color:#fff; font-weight:600;}
+
+    nav a {
+      margin:0 15px;
+      color:#fff;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    nav a:hover {color:#000;}
+
+    .hero {
+      height:40vh;
+      background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)), url('kayujati.png');
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+    }
+
+    .hero h1 {
+      color:#c19a6b;
+      font-size:36px;
+    }
+
+    .section {
+      padding:70px 60px;
+    }
+
+    .contact-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap:40px;
+      align-items:flex-start;
+    }
+
+    .contact-info {
+      flex:1;
+      min-width:300px;
+    }
+
+    .contact-info h2 {
+      color:#c19a6b;
+      margin-bottom:20px;
+    }
+
+    .info-box {
+      margin-bottom:20px;
+    }
+
+    .info-box strong {
+      display:block;
+      margin-bottom:5px;
+      color:#c19a6b;
+    }
+
+    .info-box span {
+      color:#ccc;
+    }
+
+    .btn {
+      display:inline-block;
+      margin-top:20px;
+      padding:14px 30px;
+      background:#25D366;
+      color:#fff;
+      text-decoration:none;
+      border-radius:6px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover {
+      background:#1ebe5d;
+    }
+
+    .map {
+      flex:1;
+      min-width:300px;
+    }
+
+    iframe {
+      width:100%;
+      height:350px;
+      border:0;
+      border-radius:10px;
+    }
+
+    footer {
+      padding:30px;
+      text-align:center;
+      margin-top:50px;
+      font-size:14px;
+      background:
+        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+        url('kayujati.png');
+      background-size:cover;
+    }
+
+    @media(max-width:768px){
+      header {flex-direction:column;}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo-legowo.png">
+    <span>UD Legowo Jati</span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="tentang.html">Tentang</a>
+    <a href="produk.html">Produk</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Hubungi Kami</h1>
+</section>
+
+<section class="section">
+
+  <div class="contact-container">
+
+    <!-- INFO -->
+    <div class="contact-info">
+      <h2>Konsultasi & Pemesanan</h2>
+
+      <div class="info-box">
+        <strong>Alamat</strong>
+        <span>Ngampon, Karangbanyu, Widodaren, Ngawi, Jawa Timur</span>
+      </div>
+
+      <div class="info-box">
+        <strong>WhatsApp</strong>
+        <span>+62 852-3374-9200</span>
+      </div>
+
+      <div class="info-box">
+        <strong>Jam Operasional</strong>
+        <span>Senin - Sabtu (08:00 - 17:00)</span>
+      </div>
+
+      <a href="https://wa.me/6285233749200?text=Halo%20saya%20ingin%20konsultasi%20kayu%20jati" class="btn" target="_blank">
+        Chat Sekarang di WhatsApp
+      </a>
+    </div>
+
+    <!-- MAP -->
+    <div class="map">
+      <iframe 
+        src="https://www.google.com/maps?q=-7.3753967,111.25275&hl=id&z=17&output=embed">
+      </iframe>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 UD Legowo Jati</p>
+  <p>Selembut Hati, Sekuat Jati</p>
+</footer>
+
+</body>
+</html>
